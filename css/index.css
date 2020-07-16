@@ -11,3 +11,38 @@ body {
     margin: 0;
     width: 100%;
 }
+
+div#viewport {
+    margin: 0 auto;
+    min-height: 100%;
+    min-width: 980px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+div#top-bar {
+    font-size: 13px;
+    position: relative;
+    top: 16px;
+}
+
+div#top-buttons {
+    align-items: center;
+    display: flex;
+    float: right;
+    min-width: 275px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    text-align: right;
+}
+
+div#top-links {
+    display: flex;
+    line-height: normal;
+    padding-right: 15px;
+    white-space: nowrap;
+}
+
+div#top-link {}
