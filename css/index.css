@@ -1,0 +1,13 @@
+html {
+    --main-bg-color: #FFF;
+    --main-text-color: #222;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
