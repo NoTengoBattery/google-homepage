@@ -1,8 +1,17 @@
 html {
-    --alt-text-color: #FFF;
+    --alt-text-color: #fff;
+    --bar-border-color: #dfe1e5;
     --blue-tone-ac: #4285f4;
-    --main-bg-color: #FFF;
-    --main-text-color: #222
+    --blue-tone1-ac: #4387fd;
+    --blue-tone2-ac: #4683ea;
+    --gray-tone-ic: #9aa0a6;
+    --main-bg-color: #fff;
+    --main-text-color: #222;
+    --min-width: 980px;
+    --sb-container-width: 833px;
+    --sb-text-color: rgba(0, 0, 0, .87);
+    --sb-top-offset: 311px;
+    --sb-width: 484px
 }
 
 body {
@@ -17,7 +26,7 @@ body {
 div#viewport {
     margin: 0 auto;
     min-height: 100%;
-    min-width: 980px;
+    min-width: var(--min-width);
     position: absolute;
     top: 0;
     width: 100%
@@ -97,7 +106,7 @@ a#gapps {
 }
 
 a#login {
-    background: linear-gradient(90deg, #4387fd 0%, #4683ea 100%);
+    background: linear-gradient(90deg, var(--blue-tone1-ac) 0%, var(--blue-tone2-ac) 100%);
     border: 1px solid var(--blue-tone-ac);
     border-radius: 2px;
     color: var(--alt-text-color);
@@ -105,4 +114,103 @@ a#login {
     font-weight: 700;
     line-height: 28px;
     padding: 0 12px
+}
+
+div#super-form {
+    margin-top: 0;
+    min-width: var(--min-width);
+    position: absolute;
+    top: var(--sb-top-offset);
+    width: 100%
+}
+
+form#search {
+    background: none;
+    margin: 0 auto;
+    max-width: none;
+    overflow: visible;
+    width: var(--sb-container-width)
+}
+
+div#form-container {
+    margin: 0 auto;
+    padding-top: 6px;
+    position: relative;
+    width: var(--sb-width)
+}
+
+div#search-container {
+    border: 1px solid var(--bar-border-color);
+    border-radius: 24px;
+    display: flex;
+    height: 44px;
+    margin: 0 auto
+}
+
+div#search-container:hover {
+    border-color: rgba(223, 225, 229, 0);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28)
+}
+
+div#search-elements {
+    display: flex;
+    flex: 1;
+    padding: 5px 8px 0 16px;
+    padding-left: 14px
+}
+
+div#search-icon-container {
+    align-items: center;
+    display: flex;
+    margin-top: -5px;
+    padding-right: 13px
+}
+
+div.bar-ics {
+    margin: auto
+}
+
+span.search-icon {
+    color: var(--gray-tone-ic);
+    display: inline-block;
+    fill: currentColor;
+    height: 20px;
+    line-height: 24px;
+    margin-top: 3px;
+    position: relative;
+    width: 20px
+}
+
+div#search-input-container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap
+}
+
+input.bar-input {
+    background-color: transparent;
+    border: none;
+    color: var(--sb-text-color);
+    display: flex;
+    flex: 100%;
+    font: 16px arial, sans-serif;
+    height: 34px !important;
+    outline: none;
+    padding: 0;
+    word-wrap: break-word
+}
+
+div#stt-icon-container {
+    align-items: stretch;
+    cursor: pointer;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    margin-top: -5px
+}
+
+span#stt-icon {
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 24px
 }
