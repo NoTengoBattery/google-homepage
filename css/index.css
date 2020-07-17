@@ -274,7 +274,8 @@ div#bot-bar {
     border-top: 1px solid var(--gray-tone-bb);
     font-size: 14px;
     line-height: 40px;
-    min-width: 980px
+    min-width: var(--min-width);
+    width: 100%
 }
 
 span#bot-lft {
