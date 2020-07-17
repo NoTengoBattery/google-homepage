@@ -123,26 +123,25 @@ a#login {
     padding: 0 12px
 }
 
+.ctr-p {
+    margin: 0 auto;
+    min-width: var(--min-width)
+}
+
 div#super-form {
-    margin-top: 0;
-    min-width: var(--min-width);
     position: absolute;
     top: var(--sb-top-offset);
     width: 100%
 }
 
 form#search {
-    background: 0 0;
     margin: 0 auto;
-    max-width: none;
-    overflow: visible;
     width: var(--sb-container-width)
 }
 
 div#form-container {
     margin: 0 auto;
     padding-top: 6px;
-    position: relative;
     width: var(--sb-width)
 }
 
@@ -150,8 +149,7 @@ div#search-container {
     border: 1px solid var(--bar-border-color);
     border-radius: 24px;
     display: flex;
-    height: 44px;
-    margin: 0 auto
+    height: 44px
 }
 
 div#search-container:hover {
@@ -167,7 +165,6 @@ div#search-elements {
 }
 
 div#search-icon-container {
-    align-items: center;
     display: flex;
     margin-top: -5px;
     padding-right: 13px
@@ -182,9 +179,7 @@ span.search-icon {
     display: inline-block;
     fill: currentColor;
     height: 20px;
-    line-height: 24px;
     margin-top: 3px;
-    position: relative;
     width: 20px
 }
 
@@ -223,9 +218,7 @@ span#stt-icon {
 }
 
 div#submit-container {
-    height: 70px;
     padding-top: 18px;
-    top: 53px;
     width: var(--sm-width)
 }
 
@@ -239,14 +232,21 @@ input.sb {
     height: 36px;
     margin: 11px 4px;
     min-width: 54px;
-    padding: 0 16px;
-    text-align: center
+    padding: 0 16px
 }
 
 input.sb:hover {
-    background-color: var(--gray-tone3-sm);
-    background-image: -webkit-linear-gradient(top, var(--gray-tone3-sm), var(--gray-tone2-sm));
+    background: linear-gradient(90deg, var(--gray-tone3-sm) 0, var(--gray-tone2-sm) 100%);
     border: 1px solid var(--gray-tone4-sm);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
     color: var(--main-text-color)
+}
+
+div#img-ctr {
+    margin-top: 89px
+}
+
+img#glogo {
+    height: 92px;
+    padding-top: 109px
 }
