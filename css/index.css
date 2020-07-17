@@ -267,7 +267,8 @@ span#bot-rgt {
 div#bot-bar-container {
     background: var(--gray-tone-sm);
     bottom: 0;
-    position: fixed
+    position: fixed;
+    width: 100%
 }
 
 div#bot-bar {
@@ -275,7 +276,6 @@ div#bot-bar {
     font-size: 14px;
     line-height: 40px;
     min-width: var(--min-width);
-    width: 100%
 }
 
 span#bot-lft {
